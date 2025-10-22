@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Guess the Number</h1>
+    <div id="rangeSetup">
+      <p>Set your range:</p>
+      <div class="range-inputs">
+        <input type="number" id="minRange" placeholder="Min number" value="1">
+        <span>to</span>
+        <input type="number" id="maxRange" placeholder="Max number" value="100">
+      </div>
+      <button id="startGame">Start Game</button>
+    </div>
+    <div id="gameArea" style="display: none;">
+      <p>Guess a number between <strong id="minNum">1</strong> and <strong id="maxNum">100</strong>.</p>
+      <input type="number" id="guessInput" placeholder="Enter your guess">
+      <br>
+      <button id="submit">Check</button>
+    <p id="message"></p>
+    <button id="reset">Play Again</button>
+  </div>
 
+  <script src="script.js"></script>
+</body>
+</html>
